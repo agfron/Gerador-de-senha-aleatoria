@@ -61,12 +61,17 @@ body {
 #password_conteiner {
     width: 100%;
     max-width: 400px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-neutral-2);
     border-radius: 8px;
     padding: 8px 18px;
+
+}
+
+#passaword_conteiner.show {
+    display: flex;
 }
 
 #passarword {
@@ -78,13 +83,14 @@ body {
 
 #copy {
     background-color: transparent;
-    border: nome;
+    border: none;
     color: var(--color-primary-1);
     height: 40px;
     width: 30px;
     font-size: 16px;
     cursor: pointer;
     transition: color .4s;
+
 }
 
 #copy:haver {
