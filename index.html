@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de senha aleatoria</title>
+   <link rel="stylesheet" href=https//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css>
+   <link rel="stylesheet" href="styles/styles.css">
+   <title>Gerador de senha aleatoria</title>
 </head>
 <body>
-    
+    <div id="conteiner">
+     <img src="src/illustration.svg" id="password_img"alt="">
+      <h1 id="title">Gerar senha</h1>
+
+        <div id="password_container">
+           <span id="password">jh</span>
+             <button id="copy">
+                <i class="fa-solid fa-copy"></i>
+             </button>
+        </div>
+
+        <div id="password_itens">
+         <div class="item">
+            <input id="size" nome = "size" type= "number">
+            <label for="size" type="number">
+               Quantidade de caracteres
+            </label>
+          </div>  
+
+          <div class="item">
+            <input type="checkbox" nome="include_uppercase" id=include_uppercase>
+            <label for="include_uppercase">
+               Incluir letra maiuscula
+            </label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" nome="include_lowercase" id=include_lowercase>
+            <label for="include_lowercase">
+               Incluir letra minuscula
+            </label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" nome="include_number" id=include_number>
+            <label for="include_number">
+               Incluir numero 
+            </label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" nome="include_special_character" id=include_special_character>
+            <label for="include_special_character">
+               Incluir caractere especial 
+            </label>
+          </div>
+
+          <button id="generate">
+            Gerar senha
+          </button>
+
+         </div>
+
+        
 </body>
 </html>
