@@ -29,14 +29,13 @@ return charTypes;
 
 function getPasswordSize(){
     const size = document. querySelector('#size').value;
-    if (isNaN(size) || size < 4 || size > 128){
+    if (isNaN(size) || size < 4 || size > 128) {a
    message('Tamanho inválido, digite um número entre 4 e 128!','warning')
 
     }
 
     return size;
 } 
-
 function randomCharType(charTypes){
     const randomIndex = Math.floor(Math.random() * charTypes.length);
   
@@ -89,4 +88,8 @@ document.querySelector('#generate').addEventListener('click', function () {
     navigator.clipboard.writeText(document.querySelector ('#password'))
  message('Senha copiada com sucesso!', 'success');
   
-});
+}); 
+
+
+
+
